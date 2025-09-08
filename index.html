@@ -14,10 +14,10 @@
 </head>
 <body>
 
-    <div class="flex justify-between p-4 items-center">
+    <div class="grid grid-cols-1 gap-8 sm:grid-cols-1 md:flex lg:flex  justify-between p-4 items-center">
 
-        <div class="flex">
-<img src="assets/logo.png" alt="" class="w-[5vh]">
+        <div class="flex justify-self-center items-center sm:flex">
+<img src="assets/logo.png" alt="" class="w-[5vh] h-[5vh]">
 &nbsp; &nbsp;
 
 <p class="text-xl font-bold text-[#006747]">Emergency <br>
@@ -25,7 +25,7 @@ Service</p>
 
         </div>
 
-        <div class="flex gap-8 items-center">
+        <div class="flex gap-8 items-center sm:justify-self-center">
             <div class="flex border-[#006747] rounded-3xl bg-[#41ff6b1a] p-1 gap-4 items-center"><span class="font-bold ml-4" id="love-count">0</span>
             <img src="assets/heart.png" alt="" class="w-[3vh] mr-4"></div>
             <div class="flex border-[#006747] rounded-3xl bg-[#41ff6b1a] p-1 gap-4 items-center"><span class=" point font-bold ml-4" id="point-count">100</span>
@@ -51,9 +51,10 @@ Service</p>
 
     <!-- cards -->
 
-    <div class="grid grid-cols-4 gap-4 max-w-[100%] mx-auto bg-[#f5fff6]">
+    <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 max-w-[100%] mx-auto bg-[#f5fff6]">
 
-    <div class="bg-[#f5fff6] grid grid-cols-3 gap-4 p-4 place-items-center col-span-3">
+
+    <div class="bg-[#f5fff6] grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-4 p-4 place-items-center col-span-3">
 <div class="card w-80 bg-white card-xl shadow-sm ">
   <div class="flex justify-between p-4 items-center ">
 
@@ -345,12 +346,12 @@ Service</p>
 
 
 
-    <div class="grid col-span-1 bg-[#f5fff6] gap-4 p-4 rounded-xl">
+    <div class="grid sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-1 xl:grid-cols-1 bg-[#f5fff6] gap-4 p-4 rounded-xl">
 
     
 <div class="block bg-white border border-gray-100 gap-4 rounded-xl">
 
-      <div class="flex justify-between items-center bg-gray-50 h-[8vh]  p-4">
+      <div class="flex justify-between items-center bg-gray-50 h-[8vh] p-4 ">
   <div class="mt-2 mb-4 ">
 <i class="far fa-clock"></i> <span class="text-lg font-bold">Call History</span>
 
