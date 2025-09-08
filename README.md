@@ -28,7 +28,12 @@ then, it goes to the parental element and checks if there is any event listener.
 
 
 What is Event Delegation in JavaScript? Why is it useful?
+Ans:
+Here, we add an event listener only to the parent element. It will execute the function when any of its child element is clicked. That is called. Event Delegation.
 
-
+It helps to save memory, also manage events more efficiently.
 
 What is the difference between preventDefault() and stopPropagation() methods?
+Ans:
+Preventdefault() stops the default or normal behavior of an element.
+StopPropagation() stops the bubbling of an event.
