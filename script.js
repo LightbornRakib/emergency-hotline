@@ -20,7 +20,7 @@ countLove("love8");
 countLove("love9");
 
 
-function disableAllCopyButtons() {
+function disableAllcallButtons() {
     const buttons = document.querySelectorAll(".call-btn");
     for (let i = 0; i < buttons.length; i++) {
         buttons[i].disabled = true;
@@ -46,7 +46,7 @@ if(pointCount1<20)
     alert("You don't have enough points");
     l.target.disabled = true;
   
-    disableAllCopyButtons();
+    disableAllcallButtons();
       return false;
 }
 point.innerText= pointCount1-20;
@@ -92,6 +92,7 @@ var html= `
     `;
 
 alert("Calling "+ text+ " "+ number);
+  history1(n);
 
 }
 
@@ -134,15 +135,16 @@ const btns= document.querySelectorAll(".call-btn");
 for(let i=0; i<btns.length; i++)
 {
    
+  
 
- btns[i].addEventListener("click", history);
+ 
     btns[i].addEventListener("click", call);
     
 }   
 
 
 
-function history(ml) {
+function history1(ml) {
     var container = document.getElementById("history");
     var div = document.createElement("div");
 
@@ -181,6 +183,12 @@ function history(ml) {
 
 }
 
+
+if(pointCount1<20)
+{
+    disableAllcallButtons();
+    
+}
 
 
 
